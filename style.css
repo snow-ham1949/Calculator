@@ -1,0 +1,105 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: #c3dafa;
+}
+
+#container {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.calculator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #b0b1f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.showscreen {
+    padding: 10px 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #fbf0ef;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 200px;
+}
+  
+#lastoperation {
+    min-height: 32px;
+    font-size: 20px;
+}
+  
+#currentoperation {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    margin: 0;
+    cursor: pointer;
+    outline: 0;
+    padding: 5px;
+    text-align: center;
+    border: 2px gray solid;
+}
+
+.span-grid {
+   grid-column: span 2;
+}
+
+#clear-btn, #delete-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+}
+
+#clear-btn {
+    background-color: #e97299;
+}
+
+#delete-btn {
+    background-color: #a7e2f1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px;
+    height: 32px;
+    font-size: 20px;
+    background-color: #e2f0fc;
+}
